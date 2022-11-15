@@ -22,7 +22,7 @@ const AuthProvider = ({children}) =>{//those component which is use this context
         <AuthContext.Provider value={[auth, setAuth]}>
                 {children}
         </AuthContext.Provider>
-    )
+    ) 
 }
 const useAuth = ()=>useContext(AuthContext);
 //now in our component we can easily access=> const [auth, setAuth] = useAuth()
