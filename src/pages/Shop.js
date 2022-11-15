@@ -63,7 +63,7 @@ function Shop() {
     }
   return (
     <>
-        <Jumbotron title="Hello World" subtitle="Welcome to react ecommerce app" />
+        <Jumbotron title="Hello World" subtitle="Welcome to KriBooks-client app" />
         {/* <pre>{JSON.stringify({radio, checked}, null, 4)}</pre> */}
          <div className="container-fluid">
             <div className="row">
