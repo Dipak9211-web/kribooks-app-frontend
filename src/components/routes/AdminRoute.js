@@ -21,7 +21,7 @@ function AdminRoute() {
       },[auth?.token])
            
 
-  return ok? <Outlet/>:<Loading path=""/>
+  return ok? <Outlet/>:<Loading path="/"/>
 }
 
 export default AdminRoute

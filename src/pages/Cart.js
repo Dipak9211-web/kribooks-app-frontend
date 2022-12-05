@@ -8,7 +8,7 @@ import UserCartSidebar from '../components/cards/UserCartSidebar';
 
 function Cart() {
     //context
-    const [cart, setCart] = useCart();
+    const [cart] = useCart();
     const [auth] = useAuth();
     //hooks
     const navigate = useNavigate();
@@ -22,7 +22,7 @@ function Cart() {
         <div className="col-md-12">
             <div className="p-3 mt-2 mb-2 h4 bg-light text-center">
                 {cart?.length>=1 ? 'My Cart': <div className='text-center'>
-                    <button className="btn btn-primary" onClick={()=>navigate('/')}>Back to HoME</button>
+                    <button className="btn btn-primary" onClick={()=>navigate('/')}>Back to Home</button>
                 </div>}
             </div>
         </div>

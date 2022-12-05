@@ -3,7 +3,7 @@ import { useCart } from '../../context/Cart'
 
 
 
-function ProductCardHorizontal({p, remove= true}) {
+function ProductCardHorizontal({p, remove= "remove"}) {
  //hooks
     const [cart, setCart] = useCart();
       //remove cart

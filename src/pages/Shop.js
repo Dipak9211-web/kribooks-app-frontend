@@ -14,17 +14,17 @@ function Shop() {
     const [radio, setRadio] = useState([]);//use for radio for price value
     //filter prodduct
     useEffect(()=>{
-        if(!checked.length || !radio.length) loadProducts();//no length of check and radio
+        if(!checked.length || !radio.length) loadProducts();//no length of check and radio then load all products
    },[]);
 
     useEffect(()=>{
-        if(checked.length || radio.length) loadFilteredProduct()
+        if(checked.length || radio.length) loadFilteredProduct()//means if checked or radio has some value then run loadFilterProducts
     },[checked, radio]);
 
    
     const loadFilteredProduct = async()=>{
          try {
-            const {data} = await axios.post('/filtered-products', {checked, radio})
+            const {data} = await axios.post('/filtered-products', {checked, radio}) //where checked=[categorories id],radio=[range of price array like=>[0, 19] ] 
              setProducts(data)
             console.log(data);
         } catch (error) {
@@ -53,9 +53,9 @@ function Shop() {
         }
     };
     const handleCheck = (value, id)=>{
-        let all = [...checked];
+        let all = [...checked];//intially it is empty aaray but after check the checkboxes it have some value related to the checked box
         if(value){//checked means value=>true, we will get category id
-            all.push(id)
+            all.push(id)//means we will push the checked category id in all array
         }else{
             all = all.filter((c)=>c !== id)//means whens uncheck the box then we get again id which equalt the check box but this time value will be false
         }

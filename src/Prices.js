@@ -4,7 +4,7 @@ export const prices = [ //stactic price option which is show to the user
         name:'Any',
         array:[]
     },
-    {
+    { 
         _id:1,
         name:'$0 to 19',
         array:[0, 19]

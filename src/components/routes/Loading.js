@@ -4,7 +4,7 @@ import {useNavigate, useLocation} from 'react-router-dom'
 import LoadingGIF from '../../images/dilip-sardesai.webp';
 
 
-function Loading({path="login"}) {
+function Loading({path="/login"}) {
     const [count, setCount] = useState(3);
     const navigate = useNavigate();
     const location = useLocation();
