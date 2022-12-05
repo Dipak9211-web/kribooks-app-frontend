@@ -53,7 +53,7 @@ function Home() {
   const sortedBySold = arr?.sort((a, b)=>(a.sold < b.sold? 1: -1 ))
   return (
 <>
-    <Jumbotron title="Hi Sir" subtitle="welcome to KriBooks-App"/>
+    <Jumbotron title="Hi Sir" subtitle="Welcome To KriBooks-App"/>
       <div className="container">
       <div className='row'>
         <div className="col-md-6">
