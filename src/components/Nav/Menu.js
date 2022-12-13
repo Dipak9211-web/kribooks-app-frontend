@@ -22,11 +22,11 @@ export default function Menu(){
     return <>
 <ul  className="nav d-flex justify-content-between shadow-sm mb-2 sticky-top bg-light" >
   <li className="nav-item">
-    <NavLink to="/" className="nav-link" >HOME</NavLink>
+    <NavLink to="/" className="nav-link" end>HOME</NavLink>
   </li>
   <li className="nav-item">
     <NavLink to="/shop" className="nav-link" >SHOP</NavLink>
-  </li>
+  </li> 
   <div className="dropdown">
     <li>
       <Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown">CATEGORIES</Link>
