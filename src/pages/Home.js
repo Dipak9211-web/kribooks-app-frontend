@@ -59,7 +59,7 @@ function Home() {
         <div className="col-md-6">
         <h2 className='p-3 mt-2 mb-2 h4 bg-light text-center'>New Arrivals</h2>
     <div className="row">
-    {products?.map((p)=>(
+    {products.length===0?<h4 className="display-flex justify-content-center align-content-center">Loading...</h4>: products?.map((p)=>(
          <div className="col-sm-6" key={p._id}>
          <ProductCard  p={p}/>
          </div>
