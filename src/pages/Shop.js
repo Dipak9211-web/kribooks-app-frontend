@@ -63,7 +63,7 @@ function Shop() {
     }
   return (
     <>
-        <Jumbotron title="Hi Sir" subtitle="Welcome To KriBooks-App" />
+        <Jumbotron title="Hello Sir" subtitle="Welcome To KriBooks-App" />
         {/* <pre>{JSON.stringify({radio, checked}, null, 4)}</pre> */}
          <div className="container-fluid">
             <div className="row">
