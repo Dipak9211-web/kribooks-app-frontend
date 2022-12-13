@@ -97,7 +97,7 @@ function Shop() {
                 <div className="col-md-9">
                  <h2 className='p-3 mt-3 mb-2 h4 bg-light text-center'>{products?.length} Products</h2>
                   <div className="row" style={{height:"100vh", overflow:"scroll"}}>
-                    {products?.map((p)=>(
+                    {products.length===0?<h4 className='display-flex justify-content-center'>Loading...</h4>:products?.map((p)=>(
                         <div className="col-md-4" key={p._id}>
                             <ProductCard p={p}/>
                         </div>

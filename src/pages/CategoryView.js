@@ -26,7 +26,7 @@ function CategoryView() {
   return (
     <>
        
-        <Jumbotron title={category[0]?.name} subtitle={`${products?.length} product found in ${category?.name}`}/>
+        <Jumbotron title={category[0]?.name} subtitle={`${products?.length} product found in ${category.length===0?"Categories":category?.name}`}/>
            <div className="container-fluid">
             <div className="row mt-3">
                 {products?.map(p =>(
